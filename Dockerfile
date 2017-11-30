@@ -9,7 +9,8 @@ RUN apt-get update && apt-get install -y curl apt-transport-https ca-certificate
 RUN apt-get update && apt-get install -y \
   mysql-client \
   git \
-  yarn
+  yarn \
+  build-essential
 
 
 RUN curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash - && \
